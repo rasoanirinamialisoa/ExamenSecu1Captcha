@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Séquence</title>
+</head>
+<body>
+    <h1>Entrez un nombre entre 1 et 1000</h1>
+    <form id="formulaire" onsubmit="return soumettreFormulaire(event)">
+        <label for="nombre">Nombre (1 à 1000):</label>
+        <input type="number" id="nombre" name="nombre" min="1" max="1000" required>
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <div id="sequence" style="display:none;">
+        <h2>La Séquence:</h2>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
