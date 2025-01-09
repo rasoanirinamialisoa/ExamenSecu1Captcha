@@ -1,5 +1,3 @@
 
-export default function handler(req, res) {
-    const apiKey = process.env.WAF_API_KEY;
-    res.status(200).json({ apiKey });
-}
+window.WAF_API_KEY = process.env.WAF_API_KEY;
+console.log("WAF_API_KEY has been set to:", window.WAF_API_KEY);
